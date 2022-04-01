@@ -5,10 +5,9 @@ function horizontalScroll() {
 
   var horizontalSlide = new TimelineMax()
     // animate panels
-    .to("#js-slideContainer", 1, { x: "-20%" })
-    .to("#js-slideContainer", 1, { x: "-40%" })
-    .to("#js-slideContainer", 1, { x: "-60%" })
-    .to("#js-slideContainer", 1, { x: "-80%" })
+    .to("#js-slideContainer", 1, { x: "-25%" })
+    .to("#js-slideContainer", 1, { x: "-50%" })
+    .to("#js-slideContainer", 1, { x: "-75%" })
 
   // create scene to pin and link animation
   new ScrollMagic.Scene({

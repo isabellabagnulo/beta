@@ -13,11 +13,11 @@ html {
   overflow: hidden;
   perspective: 1000;
   .sections {
-    width: 500%;
+    width: 400%;
     height: 100vh;
     .section {
       height: 100%;
-      width: calc( 100% / 5 );
+      width: calc( 100% / 4 );
       float: left;
       position: relative;
       background: #fff;
@@ -50,8 +50,8 @@ html {
   }
 }
 
-// SECTION 2 - MOSTRA
-#mostra{
+// SECTION 2/3/4 - MOSTRA/LIBRO/ABOUT
+#mostra, #libro, #about{
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
@@ -77,25 +77,6 @@ html {
     padding: 20px;
   }
 }
-
-#libro{
-  .section-img-container{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .section-img{
-      height: 80vh;
-      width: 80vw;
-      background: url('../static/img/libro.jpg') no-repeat center center / cover;
-    }
-  }
-}
-// SECTION 3 - LIBRO
-
-
-// SECTION 4 - ABOUT
 
 @media(min-width:1000px){
 
@@ -124,8 +105,8 @@ html {
     align-items: end;
   }
 
-  // SECTION 2 
-  #mostra{
+  // SECTION 2/3/4 - MOSTRA/LIBRO/ABOUT
+  #mostra, #libro, #about{
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -144,20 +125,11 @@ html {
       }
     }
     .section-img-container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 50vw;
       padding: 150px;
-    }
-  }
-
-  //SECTION 3
-  #libro{
-    .section-img-container{
-      height: 100vh;
-      width: 50vw;
-      .section-img{
-        height: 80vh;
-        width: 40vw;
-      }
     }
   }
 }

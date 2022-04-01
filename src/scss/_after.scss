@@ -15,10 +15,33 @@
         margin-left: 10px;
     }
 }
+.line-left{
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    &:before{
+        background-color: #14FF00;
+        position: absolute;
+        bottom: 10%;
+        left: 0px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        position: relative;
+        width: 50px;
+        margin-right: 10px;
+    }
+}
 
 @media(min-width:1000px){
     .line-right{
         &:after{
+            width: 150px;
+            height: 5px;
+        }
+    }
+    .line-left{
+        &:before{
             width: 150px;
             height: 5px;
         }
