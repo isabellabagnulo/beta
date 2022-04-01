@@ -1,0 +1,26 @@
+.line-right{
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+    &:after{
+        background-color: #14FF00;
+        position: absolute;
+        bottom: 10%;
+        right: 0px;
+        content: "";
+        display: inline-block;
+        height: 3px;
+        position: relative;
+        width: 50px;
+        margin-left: 10px;
+    }
+}
+
+@media(min-width:1000px){
+    .line-right{
+        &:after{
+            width: 150px;
+            height: 5px;
+        }
+    }
+}

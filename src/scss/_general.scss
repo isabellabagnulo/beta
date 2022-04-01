@@ -1,0 +1,160 @@
+// HORIZONTAL SCROLL
+body,
+html {
+  height: 100%;
+  font-family: 'Neue Montreal', sans-serif;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1000;
+  .sections {
+    width: 500%;
+    height: 100vh;
+    .section {
+      height: 100%;
+      width: calc( 100% / 5 );
+      float: left;
+      position: relative;
+      background: #fff;
+    }
+  }
+}
+
+// SECTION 1 - HOME
+#section-1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  .section-text-container{
+    display: flex;
+    justify-content: center;
+    .section-text{
+      display: flex;
+      flex-direction: column;
+      .descrizione-home{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        p{
+          width: 60vw;
+          padding: 30px 0;
+        }
+      }
+      .cta{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// SECTION 2 - MOSTRA
+#section-2{
+  width: 100vw;
+  justify-content: center;
+  .section-text-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .descrizione-home{
+      width: 60vw;
+      p{
+        width: 60vw;
+        padding: 30px 0;
+      }
+    }
+  }
+}
+#section-img{
+  width: 100vw;
+  .section-img-container{
+    height: 100vh;
+    width: 100vw;
+    background: url('../static/img/mostra.jpg') no-repeat center center / cover;
+  }
+}
+
+#section-3{
+  .section-img-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .section-img{
+      height: 80vh;
+      width: 80vw;
+      background: url('../static/img/libro.jpg') no-repeat center center / cover;
+    }
+  }
+}
+// SECTION 3 - LIBRO
+
+
+// SECTION 4 - ABOUT
+
+@media(min-width:1000px){
+
+  #section-1 {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    .section-text-container{
+      display: flex;
+      align-self: flex-start;
+      .section-text{
+        padding: 100px 20px;
+        .descrizione-home{
+          width: 40vw;
+          p{
+            width: 25vw;
+            padding: 50px 0;
+          }
+        }
+      }
+    }
+  }
+
+  // SECTION 1 - HOME
+  #section-1{
+    align-items: end;
+  }
+
+  // SECTION 2 
+  #section-2{
+    width: 50vw;
+    .section-text-container{
+      display: flex;
+      justify-content: center;
+      align-self: flex-start;    
+      .section-text{
+        padding: 100px 20px;
+        .descrizione-home{
+          width: 40vw;
+          p{
+            width: 25vw;
+            padding: 50px 0;
+          }
+        }
+      }  
+    }
+  }
+  #section-img{
+    width: 50vw;
+  }
+
+  //SECTION 3
+  #section-3{
+    .section-img-container{
+      height: 100vh;
+      width: 50vw;
+      .section-img{
+        height: 80vh;
+        width: 40vw;
+      }
+    }
+  }
+}

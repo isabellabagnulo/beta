@@ -1,0 +1,78 @@
+// // MENU CUBOTTI
+.navigazione-blocchi {
+    display: flex;
+    align-items: flex-end;
+    nav{
+        ul{
+            display: flex;
+            align-items: flex-end;
+            width: 100vw;
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;
+                position: relative;
+                overflow: hidden;
+                transition: all 1s cubic-bezier(0.52, 0.01, 0, 1) 0s, transform 1s cubic-bezier(0.52, 0.01, 0, 1) 0.8s;
+                &#li-1{
+                    height: 45vh;
+                    background: url("../static/img/menu-li1.jpg") no-repeat center center / cover;
+                }
+                &#li-2{
+                    height: 40vh;
+                    background: url("../static/img/menu-li2.jpg") no-repeat center center / cover;
+                }
+                &#li-3{
+                    height: 50vh;
+                    background: url("../static/img/menu-li3.jpg") no-repeat center center / cover;
+                }
+                a{
+                    position: absolute;
+                }
+                .vertical-text{
+                    writing-mode: vertical-rl;
+                    top: 20px;
+                    left: 20px;
+                    font-size: 24px;
+                    color: $white;
+                }
+                .number{
+                    bottom: 20px;
+                    font-size: 50px;
+                    color: $green;
+                }
+            }
+        }
+    } 
+}
+
+@media(min-width: 1000px){
+    .navigazione-blocchi{
+        nav{
+            ul{
+                width: 50vw;
+                li{
+                    &#li-1{
+                        height: 75vh;
+                    }
+                    &#li-2{
+                        height: 70vh;
+                    }
+                    &#li-3{
+                        height: 78vh;
+                    }
+                    .vertical-text{
+                        font-size: 40px;
+                    }
+                    .number{
+                        bottom: 50px;
+                        font-size: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+  
