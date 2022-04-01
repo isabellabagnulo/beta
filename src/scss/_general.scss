@@ -4,6 +4,9 @@ html {
   height: 100%;
   font-family: 'Neue Montreal', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   width: 100%;
   height: 100%;
@@ -23,7 +26,7 @@ html {
 }
 
 // SECTION 1 - HOME
-#section-1 {
+#home {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
@@ -33,7 +36,7 @@ html {
     .section-text{
       display: flex;
       flex-direction: column;
-      .descrizione-home{
+      .text-content{
         width: 80vw;
         display: flex;
         flex-direction: column;
@@ -43,41 +46,39 @@ html {
           padding: 30px 0;
         }
       }
-      .cta{
-        display: flex;
-        flex-direction: column;
-      }
     }
   }
 }
 
 // SECTION 2 - MOSTRA
-#section-2{
-  width: 100vw;
-  justify-content: center;
+#mostra{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
   .section-text-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    .descrizione-home{
-      width: 60vw;
-      p{
-        width: 60vw;
-        padding: 30px 0;
+    .section-text{
+      display: flex;
+      flex-direction: column;
+      .text-content{
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        p{
+          width: 60vw;
+          padding: 30px 0;
+        }
       }
     }
   }
-}
-#section-img{
-  width: 100vw;
   .section-img-container{
-    height: 100vh;
-    width: 100vw;
-    background: url('../static/img/mostra.jpg') no-repeat center center / cover;
+    padding: 20px;
   }
 }
 
-#section-3{
+#libro{
   .section-img-container{
     height: 100vh;
     width: 100vw;
@@ -98,7 +99,7 @@ html {
 
 @media(min-width:1000px){
 
-  #section-1 {
+  #home {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
@@ -107,7 +108,7 @@ html {
       align-self: flex-start;
       .section-text{
         padding: 100px 20px;
-        .descrizione-home{
+        .text-content{
           width: 40vw;
           p{
             width: 25vw;
@@ -119,35 +120,37 @@ html {
   }
 
   // SECTION 1 - HOME
-  #section-1{
+  #home{
     align-items: end;
   }
 
   // SECTION 2 
-  #section-2{
-    width: 50vw;
+  #mostra{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     .section-text-container{
       display: flex;
-      justify-content: center;
-      align-self: flex-start;    
+      align-self: flex-start;
       .section-text{
         padding: 100px 20px;
-        .descrizione-home{
+        .text-content{
           width: 40vw;
           p{
             width: 25vw;
             padding: 50px 0;
           }
         }
-      }  
+      }
     }
-  }
-  #section-img{
-    width: 50vw;
+    .section-img-container{
+      width: 50vw;
+      padding: 150px;
+    }
   }
 
   //SECTION 3
-  #section-3{
+  #libro{
     .section-img-container{
       height: 100vh;
       width: 50vw;
