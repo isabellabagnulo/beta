@@ -16,8 +16,8 @@
             }
         }
         .scanner {
-            width: 200px;
-            height: 300px;
+            width: 100px;
+            height: 150px;
             vertical-align: middle;
             border: 2px solid white;
             box-sizing: border-box;
@@ -164,5 +164,16 @@
     to {
       -webkit-transform: translateY(var(--direction, -50%));
               transform: translateY(var(--direction, -50%));
+    }
+}
+
+@media(min-width: 1000px){
+    .slider-scanner-container{
+        .slider-scanner {
+            .scanner{
+                width: 200px;
+                height: 300px;
+            }
+        }
     }
 }
