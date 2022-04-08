@@ -1,3 +1,4 @@
+// HORIZONTAL SCROLL
 const scrollContainer = document.querySelector("main")
 
 scrollContainer.addEventListener("wheel", (evt) => {
@@ -5,6 +6,7 @@ scrollContainer.addEventListener("wheel", (evt) => {
   scrollContainer.scrollLeft += evt.deltaY
 })
 
+// MENU CUBOTTI
 const li1 = document.querySelector("#li-1")
 const li2 = document.querySelector("#li-2")
 const li3 = document.querySelector("#li-3")
@@ -55,4 +57,11 @@ li3.addEventListener("mouseleave", () => {
   li1.style.flexGrow = "1"
   li2.style.flexGrow = "1"
   li3.style.flexGrow = "1"
+})
+
+// SLIDER SCANNER
+;[...document.querySelectorAll(".single-column")].map((column) => {
+  column.style.setProperty("--animation", "slide")
+  column.style.setProperty("height", "1500%")
+  column.innerHTML = column.innerHTML + column.innerHTML
 })
