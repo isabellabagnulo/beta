@@ -9,113 +9,104 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <div class="wrapper" id="js-wrapper">
 
-        <!-- HEADER -->
-        <header>
-            <a href="#home" class="logo"><img class="logo-compressed" src="static/img/logo.svg" alt=""><img class="logo-extended" src="static/img/logo-extended.svg" alt=""></a>
-            <div class="hamburger-icon"><img src="static/img/burger.png" alt=""></div>
-            <div class="hamburger-content">
+    <!-- HEADER -->
+    <header>
+        <a href="#home" class="logo"><img class="logo-compressed" src="static/img/logo.svg" alt=""><img class="logo-extended" src="static/img/logo-extended.svg" alt=""></a>
+        <div class="hamburger-icon"><img src="static/img/burger.png" alt=""></div>
+        <div class="hamburger-content">
+            <nav>
+                <ul>
+                    <a href=""><li></li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SECTION 1 -->
+        <section id="home" class="section">
+            <div class="section-text-container">
+                <div class="section-text">
+                    <h1><span class="line-right">B'22</span><br>Project</h1>
+                    <div class="text-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id fermentum enim. Etiam vel sodales metus. Integer iaculis lacus felis, id fringilla tortor lobortis ac. Vivamus at cursus dolor, ac malesuada elit. Phasellus augue lorem, malesuada sed elit sit amet, euismod varius sem. Donec tristique arcu ut mauris efficitur, ac tincidunt ex dapibus. Quisque cursus in mi a sagittis. Cras leo ligula, vestibulum tempor libero vel, interdum consectetur nunc. Nulla sagittis turpis ac enim accumsan vehicula. Phasellus mattis dui eget mauris egestas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigazione-blocchi">
                 <nav>
                     <ul>
-                        <a href=""><li></li></a>
+                        <li id="li-1"><a class="vertical-text" href="#mostra">Mostra Fotografica</a><a class="number" href="#mostra">[01]</a></li>
+                        <li id="li-2"><a class="vertical-text" href="#libro">Libro d'artista</a><a class="number" href="#libro">[02]</a></li>
+                        <li id="li-3"><a class="vertical-text" href="#about">About</a><a class="number" href="#about">[03]</a></li>
                     </ul>
                 </nav>
             </div>
-        </header>
+        </section>
 
-        <!-- MAIN -->
-        <main>
-            <div class="sections" id="js-slideContainer">
-
-                <!-- SECTION 1 -->
-                <section id="home" class="section">
-                    <div class="section-text-container">
-                        <div class="section-text">
-                            <h1><span class="line-right">B'22</span><br>Project</h1>
-                            <div class="text-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint eaque nesciunt necessitatibus inventore optio magnam voluptas eligendi vel veniam.</p>
-                            </div>
+        <!-- SECTION 2 -->
+        <section id="mostra" class="section">
+            <div class="section-text-container">
+                <div class="section-text">
+                    <h1><span class="line-right">Mostra</span><br>Fotografica</h1>
+                    <div class="text-content">
+                        <p><span class="number-p">[01]</span>L’ambra è una resina fossilizzante con proprietà conservatrici. Lambrate, a sua volta, è una realtà sfaccettata che permette la coesistenza del vecchio e del nuovo, di più identità. Così come l’ambra da nuova vita ad elementi antichi, Lambrate è luogo di proliferazione di ambienti innovativi, che non soffocano, anzi, mettono in risalto le vecchie radici del quartiere.</p>
+                        <div class="cta">
+                            <a>Vai alla mostra</a>
                         </div>
                     </div>
-                    <div class="navigazione-blocchi">
-                        <nav>
-                            <ul>
-                                <li id="li-1"><a class="vertical-text" href="#mostra">Mostra Fotografica</a><a class="number" href="#mostra">[01]</a></li>
-                                <li id="li-2"><a class="vertical-text" href="#libro">Libro d'artista</a><a class="number" href="#libro">[02]</a></li>
-                                <li id="li-3"><a class="vertical-text" href="#about">About</a><a class="number" href="#about">[03]</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </section>
-
-                <!-- SECTION 2 -->
-                <section id="mostra" class="section">
-                    <div class="section-text-container">
-                        <div class="section-text">
-                            <h1><span class="line-right">Mostra</span><br>Fotografica</h1>
-                            <div class="text-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint eaque nesciunt necessitatibus inventore optio magnam voluptas eligendi vel veniam.</p>
-                                <div class="cta">
-                                    <span>Lorem, ipsum.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-img-container"> 
-                        <img src="static/img/mostra.jpg" alt="">
-                    </div>
-                </section>
-
-                <!-- SECTION 3 -->
-                <section id="libro" class="section">
-                    <div class="section-text-container">
-                        <div class="section-text">
-                            <h1><span class="line-right">Libro</span><br>d'artista</h1>
-                            <div class="text-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint eaque nesciunt necessitatibus inventore optio magnam voluptas eligendi vel veniam.</p>
-                                <div class="cta">
-                                    <span>Lorem, ipsum.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-img-container"> 
-                        <img src="static/img/libro.jpg" alt="">
-                    </div>
-                </section>
-
-                <!-- SECTION 4 -->
-                <section id="about" class="section">
-                    <div class="section-text-container">
-                        <div class="section-text">
-                            <h1>About<br><span class="line-left">Beta</span></h1>
-                            <div class="text-content">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sint eaque nesciunt necessitatibus inventore optio magnam voluptas eligendi vel veniam.</p>
-                                <div class="cta">
-                                    <span>Lorem, ipsum.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="section-img-container"> 
-                        <img src="static/img/about.jpg" alt="">
-                    </div>
-                </section>
-
+                </div>
             </div>
-        </main>
+            <div class="section-img-container"> 
+                <img src="static/img/mostra.jpg" alt="">
+            </div>
+        </section>
 
-        <!-- FOOTER -->
-        <footer>
-            <p>Follow us on: 
-                <a target="blank" href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a target="blank" href="https://www.instagram.com/metaproject_mohole/"><i class="fa-brands fa-instagram"></i></a>
-                <a target="blank" href="#"><i class="fa-brands fa-tiktok"></i></a>
-            </p>
-            <p>©Mohole. 2022 All rights reserved</p>
-        </footer>
-    </div>
+        <!-- SECTION 3 -->
+        <section id="libro" class="section">
+            <div class="section-text-container">
+                <div class="section-text">
+                    <h1><span class="line-right">Libro</span><br>d'artista</h1>
+                    <div class="text-content">
+                        <p><span class="number-p">[02]</span>Vestibulum rhoncus justo egestas cursus dignissim. Proin blandit neque ut lorem faucibus, et euismod nulla aliquam. Fusce quis malesuada diam. Praesent aliquam, lorem at egestas sollicitudin, enim purus porta justo, non tempor ipsum libero eu sem. Ut maximus maximus blandit. Vestibulum ultricies porttitor nisl vitae rutrum. Fusce vitae dui eget magna fringilla rhoncus sit amet et neque. Nulla vel augue sed risus pellentesque.</p>
+                        <div class="cta">
+                            <a>Libro d'artista</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-img-container"> 
+                <img src="static/img/libro.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- SECTION 4 -->
+        <section id="about" class="section">
+            <div class="section-text-container">
+                <div class="section-text">
+                    <h1>About<br><span class="line-left">Beta</span></h1>
+                    <div class="text-content">
+                        <p><span class="number-p">[03]</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id fermentum enim. Etiam vel sodales metus. Integer iaculis lacus felis, id fringilla tortor lobortis ac. Vivamus at cursus dolor, ac malesuada elit. Phasellus augue lorem, malesuada sed elit sit amet, euismod varius sem. Donec tristique arcu ut mauris efficitur, ac tincidunt ex dapibus. Quisque cursus in mi a sagittis. Cras leo ligula, vestibulum tempor libero vel, interdum consectetur nunc. Nulla sagittis turpis ac enim accumsan vehicula. Phasellus mattis dui eget mauris egestas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-img-container"> 
+                <img src="static/img/about.jpg" alt="">
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Follow us on: 
+            <a target="blank" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a target="blank" href="https://www.instagram.com/metaproject_mohole/"><i class="fa-brands fa-instagram"></i></a>
+            <a target="blank" href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </p>
+        <p>©Mohole. 2022 All rights reserved</p>
+    </footer>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/ScrollMagic.min.js'></script>

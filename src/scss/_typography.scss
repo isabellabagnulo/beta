@@ -8,6 +8,12 @@ p{
 h1{
     font-size: 2.5rem;
     font-weight: 500;
+    line-height: 35px;
+}
+.number-p{
+    color: $green;
+    padding-right: 50px;
+    font-weight: 500;
 }
 
 @media(min-width: 700px){
@@ -20,5 +26,6 @@ h1{
     }
     h1{
         font-size: 8rem;
+        line-height: 110px;
     }
 }

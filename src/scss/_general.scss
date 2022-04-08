@@ -1,28 +1,23 @@
 // HORIZONTAL SCROLL
 body,
 html {
-  height: 100%;
+  margin: 0;
   font-family: 'Neue Montreal', sans-serif;
 }
 html {
   scroll-behavior: smooth;
+  
 }
-.wrapper {
-  width: 100%;
-  height: 100%;
+main{
   overflow: hidden;
-  perspective: 1000;
-  .sections {
-    width: 400%;
-    height: 100vh;
-    .section {
-      height: 100%;
-      width: calc( 100% / 4 );
-      float: left;
-      position: relative;
-      background: #fff;
-    }
-  }
+  display: flex;
+}
+section.section {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // SECTION 1 - HOME
@@ -31,18 +26,19 @@ html {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   .section-text-container{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     .section-text{
       display: flex;
       flex-direction: column;
       .text-content{
+        padding: 0px;
         width: 80vw;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         p{
-          width: 60vw;
           padding: 30px 0;
         }
       }
@@ -56,6 +52,7 @@ html {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   .section-text-container{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     .section-text{
@@ -65,9 +62,8 @@ html {
         width: 80vw;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         p{
-          width: 60vw;
           padding: 30px 0;
         }
       }
