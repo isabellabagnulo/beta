@@ -8,7 +8,7 @@ html {
   scroll-behavior: smooth;
   
 }
-main{
+.home main{
   overflow: hidden;
   display: flex;
 }
@@ -26,7 +26,7 @@ section.section {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   .section-text-container{
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     .section-text{
@@ -52,7 +52,7 @@ section.section {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   .section-text-container{
-    margin-top: 50px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     .section-text{
@@ -84,11 +84,11 @@ section.section {
       display: flex;
       align-self: flex-start;
       .section-text{
-        padding: 100px 20px;
+        padding: 30px 20px;
         .text-content{
           width: 40vw;
           p{
-            width: 25vw;
+            width: 35vw;
             padding: 50px 0;
           }
         }
@@ -110,11 +110,11 @@ section.section {
       display: flex;
       align-self: flex-start;
       .section-text{
-        padding: 100px 20px;
+        padding: 30px 20px;
         .text-content{
           width: 40vw;
           p{
-            width: 25vw;
+            width: 35vw;
             padding: 50px 0;
           }
         }
