@@ -26,6 +26,9 @@
                 opacity: 1;
             }
         }
+        .scanner-1{
+            background: url('static/img/scanner/scanner1.webp') no-repeat center center / cover;
+        }
         .single-column {
             animation: var(--animation, none) 100s infinite linear;
             &:hover {
