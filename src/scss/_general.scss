@@ -125,7 +125,11 @@ section.section {
       align-items: center;
       justify-content: center;
       width: 50vw;
-      padding: 150px;
+      padding: 50px;
+      img{
+        width: 25vw;
+        height: auto;
+      }
     }
   }
 }
