@@ -72,6 +72,9 @@ section.section {
   .section-img-container{
     padding: 20px;
   }
+  h1 img{
+    width: 90px;
+  }
 }
 
 @media(min-width:1000px){
@@ -130,6 +133,9 @@ section.section {
         width: 30vw;
         height: auto;
       }
+    }
+    h1 img{
+      width: 250px;
     }
   }
 }
