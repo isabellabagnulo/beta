@@ -8,13 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 .home main{
-  overflow: hidden;
-  display: flex;
-  position: relative;
+  overflow-x: hidden;
 }
 section.section {
   min-width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +20,6 @@ section.section {
 // SECTION 1 - HOME
 #home {
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
   .section-text-container{
     margin-top: 60px;
     display: flex;
@@ -49,8 +44,6 @@ section.section {
 // SECTION 2/3/4 - MOSTRA/LIBRO/ABOUT
 #mostra, #libro, #about{
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  align-items: center;
   .section-text-container{
     margin-top: 60px;
     display: flex;
@@ -137,5 +130,17 @@ section.section {
     h1 img{
       width: 250px;
     }
+  }
+}
+
+@media(min-width: 1050px){
+  .home main{
+    overflow: hidden;
+    display: flex;
+    position: relative;
+  }
+
+  section.section{
+    height: 100vh;
   }
 }
