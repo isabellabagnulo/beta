@@ -8,25 +8,10 @@ header{
     top: 0;
     z-index: 9999;
     .logo{
-        img, svg{
+        svg{
             height: 30px;
             width: auto;
             transition: none;
-            z-index: 999;
-            path{
-                transition: all 400ms ease-in;
-            }
-        }
-        .logo-extended{
-            opacity: 0;
-        } 
-        &:hover{
-            .logo-extended{
-                opacity: 1;;
-            }
-            .logo-monogramma{
-                opacity: 0;
-            }
         }
     }
     .burger{
@@ -37,32 +22,21 @@ header{
 .overflow{
     .logo{
         z-index: 9999;
-        img, svg{
+        svg{
             transition: all 500ms ease-out;
             transition-delay: 500ms;
-        }
-        path{
-            fill: $white;
+            path{
+                fill: $white;
+            }
         }
     }
 }
 
-@media(min-width: 1000px){
-    header{
+@media(min-width: 1050px){
+    .overflow{
         .logo{
-            img{
-                height: 40px;
-            }
-            .logo-extended{
-                margin-left: -30px;
-            }
-        }
-        .overflow{
-            .logo{
-                img, svg{
-                    height: 150px;
-                    width: auto;
-                }
+            svg{
+                height: 150px;
             }
         }
     }
