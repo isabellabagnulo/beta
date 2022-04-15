@@ -1,5 +1,4 @@
 // HORIZONTAL SCROLL
-
 if (
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
@@ -14,6 +13,19 @@ if (
     scrollContainer.scrollLeft += evt.deltaY
   })
 }
+
+// MENU BURGER
+const burger = document.querySelector(".burger")
+const nav = document.querySelector(".burgermenu-container")
+const body = document.querySelector("body")
+
+document.addEventListener("DOMContentLoaded", () => {
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("clicked")
+    nav.classList.toggle("show")
+    body.classList.toggle("overflow")
+  })
+})
 
 // MENU CUBOTTI
 const li1 = document.querySelector("#li-1")
