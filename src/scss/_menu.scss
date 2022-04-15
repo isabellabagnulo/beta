@@ -16,7 +16,7 @@
                 overflow: hidden;
                 transition: all 1s cubic-bezier(0.52, 0.01, 0, 1) 0s, transform 1s cubic-bezier(0.52, 0.01, 0, 1) 0.8s;
                 &#li-1{
-                    height: 45vh;
+                    height: 330px;
                     background: url("../static/img/menu-li1.jpg") no-repeat center center / cover;
                     position: relative;
                     &:after{
@@ -30,11 +30,11 @@
                     }
                 }
                 &#li-2{
-                    height: 40vh;
+                    height: 300px;
                     background: url("../static/img/menu-li2.jpg") no-repeat center center / cover;
                 }
                 &#li-3{
-                    height: 50vh;
+                    height: 360px;
                     background: url("../static/img/menu-li3.jpg") no-repeat center center / cover;
                 }
                 a{
