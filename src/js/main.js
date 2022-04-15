@@ -69,8 +69,21 @@ li3.addEventListener("mouseleave", () => {
 })
 
 // SLIDER SCANNER
-;[...document.querySelectorAll(".single-column")].map((column) => {
-  column.style.setProperty("--animation", "slide")
-  column.style.setProperty("height", "1500%")
-  column.innerHTML = column.innerHTML + column.innerHTML
-})
+
+if (
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  )
+) {
+  ;[...document.querySelectorAll(".single-column")].map((column) => {
+    column.style.setProperty("--animation", "slide")
+    column.style.setProperty("height", "900%")
+    column.innerHTML = column.innerHTML + column.innerHTML
+  })
+} else {
+  ;[...document.querySelectorAll(".single-column")].map((column) => {
+    column.style.setProperty("--animation", "slide")
+    column.style.setProperty("height", "1500%")
+    column.innerHTML = column.innerHTML + column.innerHTML
+  })
+}

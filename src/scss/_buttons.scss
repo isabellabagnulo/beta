@@ -1,4 +1,5 @@
 .cta{
+    margin: 10px 0 30px 0;
     a{
         padding: 5px 30px;
         border: solid 3px $green;
@@ -8,5 +9,11 @@
         &:hover{
             background: $green;
         }
+    }
+}
+
+@media(min-width: 1050px){
+    .cta{
+        margin: 0;
     }
 }
