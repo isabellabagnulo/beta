@@ -6,11 +6,11 @@ html {
 }
 html {
   scroll-behavior: smooth;
-  
 }
 .home main{
   overflow: hidden;
   display: flex;
+  position: relative;
 }
 section.section {
   min-width: 100vw;
