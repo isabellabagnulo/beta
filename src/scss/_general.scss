@@ -21,7 +21,7 @@ section.section {
 #home {
   display: grid;
   .section-text-container{
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     .section-text{
@@ -77,8 +77,9 @@ section.section {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     .section-text-container{
+      margin-top: 0;
       display: flex;
-      align-self: flex-start;
+      align-self: center;
       .section-text{
         padding: 30px 20px;
         .text-content{
@@ -104,7 +105,7 @@ section.section {
     justify-content: center;
     .section-text-container{
       display: flex;
-      align-self: flex-start;
+      align-self: center;
       .section-text{
         padding: 30px 20px;
         .text-content{
