@@ -16,7 +16,6 @@ if (isHome) {
       scrollContainer.scrollLeft += evt.deltaY
     })
   }
-  ù
 
   // MENU CUBOTTI
   const li1 = document.querySelector("#li-1")
