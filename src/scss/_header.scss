@@ -23,7 +23,7 @@ header{
     .logo{
         z-index: 9999;
         svg{
-            transition: all 500ms ease-out;
+            transition: all 400ms ease-in;
             transition-delay: 500ms;
             path{
                 fill: $white;
