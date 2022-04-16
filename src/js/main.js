@@ -1,3 +1,13 @@
+import { gsap } from "gsap"
+import { Draggable } from "gsap/Draggable"
+
+gsap.registerPlugin(Draggable)
+Draggable.create(".gallery-grid", {
+  type: "x, y",
+  edgeResistance: 0.15,
+  bounds: { top: 0, left: 0, width: 1500, height: 800 },
+})
+
 const isBody = document.querySelector("body")
 const isHome = isBody.classList.contains("home")
 if (isHome) {
