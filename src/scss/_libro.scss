@@ -5,9 +5,17 @@ main.libro{
         margin-bottom: 20px;
         display: grid;
         gap: 20px;  
+        box-shadow: -5px 5px 20px #e7e0e0;
     }
     .img-singola{
         margin-bottom: 20px;
+        box-shadow: none;
+        .shadow, img{
+            box-shadow: -5px 5px 20px #e7e0e0;
+        }
+    }
+    .shadow{
+        box-shadow: -5px 5px 20px #e7e0e0;
     }
 }
 
@@ -27,7 +35,7 @@ main.libro{
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-self: center;
-            // margin:  50px 0;
+            gap: 0;
             box-shadow: -5px 5px 20px #e7e0e0;
             img{
                 width: 30vw;
@@ -40,14 +48,14 @@ main.libro{
                 box-shadow: -5px 5px 20px #e7e0e0;
             }
         }
-        .shadow{
-            box-shadow: -5px 5px 20px #e7e0e0;
-        }
         .img-60vw{
             width: 60vw;
         }
         section, .img-singola{
             margin: 50px 0;
+        }
+        .shadow{
+            box-shadow: -5px 5px 20px #e7e0e0;
         }
     }
 }
